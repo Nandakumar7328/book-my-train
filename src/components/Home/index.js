@@ -495,11 +495,11 @@ const updateSeats = (agedFemal,agedMale,femelOther,maleOther,emptySeatsForFemal,
               </div>
               <div className='label-input-container'>
               <label htmlFor='date' className='label-para'>Date of Birth<span className='mandatory'> *</span></label>
-              <input value={dateOfBirth} onChange={onchangeDate}  placeholder='password'  id='date' type="date" className='input-sign-up'/>
+              <input value={dateOfBirth} onChange={onchangeDate}  placeholder='Date Of Birth'  id='date' type="date" className='input-sign-up'/>
               </div>
               <div className='label-input-container'>
-              <label htmlFor='number' className='label-para'>Phone number<span className='mandatory'> *</span></label>
-              <input value={phoneNumber} onChange={onchangeNumber}  placeholder='Email' id='number' type="number" className='input-sign-up'/>
+              <label htmlFor='number' className='label-para'>Phonenumber<span className='mandatory'> *</span></label>
+              <input value={phoneNumber} onChange={onchangeNumber}  placeholder='Phonenumber' id='number' type="number" className='input-sign-up'/>
               </div>
               <div className='label-input-container'>
               <label htmlFor='address' className='label-para'>Address<span className='mandatory'> *</span></label>
@@ -507,7 +507,7 @@ const updateSeats = (agedFemal,agedMale,femelOther,maleOther,emptySeatsForFemal,
               </div>
               <div className='label-input-container'>
               <label htmlFor='profile' className='label-para'>Profile<span className='mandatory'> *</span></label>
-              <input value={profilePic} onChange={onchangePic}  type="file" id='profile'/>
+              <input value={profilePic} onChange={onchangePic} placeholder="Profile" type="file" id='profile'/>
               </div>
               <button className='submit-btn' type='submit'>Submit</button>
               </form>
@@ -515,7 +515,7 @@ const updateSeats = (agedFemal,agedMale,femelOther,maleOther,emptySeatsForFemal,
         
   </div>
   </div>)}
-  {status === "true" ? ( <div className='agent-booking'>
+  {status === "true"  ? ( <div className='agent-booking'>
   <div className='booking-column'>
   <div className='form-booking'>
         <label className='lable-booking' htmlFor='email'>Email</label>
