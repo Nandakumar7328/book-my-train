@@ -1,0 +1,67 @@
+.header-container{
+    background-color: #ffffff;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0px 0px 5px 0px;
+}
+.logo{
+    width: 80px;
+}
+.my-train{
+    color: #002d62;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+.nav-sub-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+.avatar{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 50px
+}
+
+.btn-lagout{
+    background-color: #15aed5;
+    padding: 10px;
+    height: 35px;
+    color: white;
+    outline: none;
+    border-radius: 8px;
+    border: 0px;
+    cursor: pointer;
+}
+.link{
+    text-decoration: none;
+}
+
+@media screen and (min-width:600px){
+    .my-train{
+        font-size: 25px;
+    }
+    .header-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (min-width:769px){
+    .my-train{
+        font-size: 25px;
+    }
+    .header-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+}
