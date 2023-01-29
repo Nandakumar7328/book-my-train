@@ -6,7 +6,7 @@ const AgentFull = () => {
     const [allBooking,setAllBooking] = useState([])
 
     const  getAllBooking = async() => {
-        const url = 'https://train-ticket-booking.onrender.com/get-all-booking'
+        const url = 'https://blue-violet-gorilla-tux.cyclic.app/get-all-booking'
         const options ={
             method:"GET",
                   headers: {

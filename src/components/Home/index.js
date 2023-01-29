@@ -39,7 +39,7 @@ const Home = props => {
 
   const getAgentData = async() => {
       const ID = localStorage.getItem("ID")
-      const url = `https://train-ticket-booking.onrender.com/get-agent-details/${ID}`
+      const url = `https://blue-violet-gorilla-tux.cyclic.app/get-agent-details/${ID}`
       const options ={
         method:"GET",
               headers: {
@@ -59,7 +59,7 @@ const Home = props => {
   }
 
   const getRowData = async() => {
-    const url = 'https://train-ticket-booking.onrender.com/get-row'
+    const url = 'https://blue-violet-gorilla-tux.cyclic.app/get-row'
     const options ={
       method:"GET",
             headers: {
@@ -91,7 +91,7 @@ setMatrix(matrix)
   }
 
   const getBookedSeats = async() => {
-    const url = 'https://train-ticket-booking.onrender.com/get-all-booking'
+    const url = 'https://blue-violet-gorilla-tux.cyclic.app/get-all-booking'
     const options ={
       method:"GET",
             headers: {
@@ -141,7 +141,7 @@ setMatrix(matrix)
   const onSubmitMydetails = async (event) => {
      event.preventDefault()
      const ID = localStorage.getItem("ID")
-     const url = 'https://train-ticket-booking.onrender.com/add-agent-details'
+     const url = 'https://blue-violet-gorilla-tux.cyclic.app/add-agent-details'
      const agentDetails = {
       name:name,
       dateOfBirth:dateOfBirth,
@@ -226,7 +226,7 @@ setMatrix(matrix)
   }
 
   const finalUpdatecall = async(update) => {
-    const url = 'https://train-ticket-booking.onrender.com/book-ticket'
+    const url = 'https://blue-violet-gorilla-tux.cyclic.app/book-ticket'
     const options ={
       method:"POST",
       body: JSON.stringify(update),
@@ -435,7 +435,7 @@ const updateSeats = (agedFemal,agedMale,femelOther,maleOther,emptySeatsForFemal,
       limit:agentLimit
     }
     
-    const url = 'https://train-ticket-booking.onrender.com/create-agent'
+    const url = 'https://blue-violet-gorilla-tux.cyclic.app/create-agent'
     const options ={
       method:"POST",
       body: JSON.stringify(agentAddDetails),
@@ -459,7 +459,7 @@ const updateSeats = (agedFemal,agedMale,femelOther,maleOther,emptySeatsForFemal,
    }
 
    const onAddRow = async() => {
-    const url = 'https://train-ticket-booking.onrender.com/add-row'
+    const url = 'https://blue-violet-gorilla-tux.cyclic.app/add-row'
     const updateRow = {
       numberOfRow:addRowNum
     }
@@ -477,6 +477,8 @@ const updateSeats = (agedFemal,agedMale,femelOther,maleOther,emptySeatsForFemal,
      console.log(data)
      if(response.ok === true){
       getRowData()
+      setRowNum('')
+
      }
    }
 

@@ -11,7 +11,7 @@ const Login = (props) => {
  
   const onSubmitUserDetails = async event => {
      event.preventDefault()
-     const url = isSuperAdmin ? 'https://train-ticket-booking.onrender.com/login-super-admin':'https://train-ticket-booking.onrender.com/login-agent'
+     const url = isSuperAdmin ? 'https://blue-violet-gorilla-tux.cyclic.app/login-super-admin':'https://blue-violet-gorilla-tux.cyclic.app/login-agent'
      const userData = {
       email:email,
       password:password

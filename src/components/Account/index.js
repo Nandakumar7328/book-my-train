@@ -7,7 +7,7 @@ const Account = () => {
 
      const getAgentData = async() => {
         const id = localStorage.getItem("ID")
-        const url = `https://train-ticket-booking.onrender.com/get-agent-details/${id}`
+        const url = `https://blue-violet-gorilla-tux.cyclic.app/get-agent-details/${id}`
         const option = {
             method:"GET",
             headers: {
@@ -33,7 +33,7 @@ const Account = () => {
         
      }, []);
      const getAdminData = async() => {
-        const url = 'https://train-ticket-booking.onrender.com/get-admin-details'
+        const url = 'https://blue-violet-gorilla-tux.cyclic.app/get-admin-details'
         const option = {
             method:"GET",
             headers: {

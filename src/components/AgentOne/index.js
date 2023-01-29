@@ -7,7 +7,7 @@ const AgentOne = () => {
 
     const  getAllBooking = async() => {
         const ID = localStorage.getItem("ID")
-        const url = `https://train-ticket-booking.onrender.com/get-booking-agent/${ID}`
+        const url = `https://blue-violet-gorilla-tux.cyclic.app/get-booking-agent/${ID}`
         const options ={
             method:"GET",
                   headers: {
